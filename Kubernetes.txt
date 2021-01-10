@@ -1,0 +1,49 @@
+-------------- Kubernetes ------------------
+
+-------------------kubernetes------------------------
+
+kubectl run firstpod --image=nginx
+kubectl get pods
+
+kubectl get pod firstpod -o --yaml
+
+kubectl create -f firstpod.yml
+
+kubectl exec -it firstpod -- /bin/bash
+
+---- yml with 2 containers under 1 pod kind:pod
+
+kubectl exec -it firstpod --container db -- /bin/bash
+
+kubectl delete -f firstpod.yml
+
+yaml ---
+namespace
+	deployment
+		replication
+			pod
+			
+			
+-----------------------------firstpod.yml---------------------------
+kind: Pod
+apiversion: v1
+metadata:
+	name: firstpod
+	labels:
+		app: fp
+		release: stable
+		team: red
+spec:
+	containers:
+	- name: db
+	  image: redis
+	- name: web
+	  image: httpd
+			
+			
+--------------------------------
+
+kubectl get all --show--labels		
+
+	
+			
