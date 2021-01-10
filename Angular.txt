@@ -1,0 +1,49 @@
+install node.js
+npm -v
+ 
+Angular : Conponent , Services, Directives, Binding, Routing
+
+install angular cli
+
+ng new projectname
+
+ng serve 
+
+ng serve -o
+
+React
+----------------------
+npm i create-react-app
+
+npm nstall -g create-react-app
+create-react-app myfisrtreactapp
+npm install --save react-router-dom
+npm install --save axios
+npm start / yarn start
+
+BUZZYEARS EDUCATION PRIVA
+
+systeminfo - windows
+
+-- ubuntu --
+apt-get update
+
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
